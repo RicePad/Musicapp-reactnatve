@@ -2,13 +2,13 @@ import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 class Card extends Component {
-	render(){
-		return(
-			<View style={styles.containerStyle}>
-				{this.props.children}
-			</View>
-			);
-	}
+    render(){
+        return(
+            <View style={styles.containerStyle}>
+                {this.props.children}
+            </View>
+            );
+    }
 
 
 };

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Text, View, Image, Linking } from 'react-native';
 import Card from './Card';
 import CardSection from './CardSection';
 
@@ -8,7 +8,22 @@ class AlbumDetail extends Component {
 		return(
 			<Card>
                <CardSection>
-                 <Text>{this.props.album.title}</Text>
+	               <View style={styles.thumbnailContainerStyle}>
+	               	<Image
+			            source={{uri: this.props.album.thumbnail_image }}
+			            style={styles.thumbnailStyle}
+          			/>
+	               </View>
+	               <View style={styles.headerStyle}>
+	                 <Text style={styles.headerTextStyle}>{this.props.album.title}</Text>
+	                 <Text>{this.props.album.artist}</Text>
+	               </View>  
+               </CardSection>
+               <CardSection>
+               		<Image 
+               			source={{uri: this.props.album.image}} 
+               			style={styles.imageStyle}
+               		/>
                </CardSection>
 			</Card>
 			);
@@ -16,6 +31,32 @@ class AlbumDetail extends Component {
 
 
 };
+
+
+const styles = {
+	headerStyle: {
+		flexDirection: 'column',
+    	justifyContent: 'space-around',
+    },
+    headerTextStyle: {
+    	fontSize: 18
+  },
+    thumbnailStyle: {
+    	height: 50,
+    	width: 50,
+    },
+    thumbnailContainerStyle: {
+	    justifyContent: 'center',
+	    alignItems: 'center',
+	    marginLeft: 10,
+	    marginRight: 10
+  },
+	imageStyle: {
+	    height: 300,
+	    flex: 1,
+	    width: null
+	  }
+}
 
 
 

@@ -4,19 +4,19 @@ import { StyleSheet, Text, View } from 'react-native';
 
 class Header extends Component {
 
-	render(){
-		return(
-				<View style={styles.viewStyle}>
-					<Text style={styles.textStyle}>{this.props.headerText}</Text>
-				</View>
-			)
-	}
+  render(){
+    return(
+        <View style={styles.viewStyle}>
+          <Text style={styles.textStyle}>{this.props.headerText}</Text>
+        </View>
+      )
+  }
 
 }
 
 const styles = StyleSheet.create({
   textStyle: {
-  	fontSize: 20
+    fontSize: 20
   },
 
   viewStyle: {
@@ -35,5 +35,3 @@ const styles = StyleSheet.create({
 
 
 export default Header;
-
-

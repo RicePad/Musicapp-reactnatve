@@ -7,7 +7,7 @@ import List from './src/components/List';
  class App extends React.Component {
   render() {
     return (
-      <View>
+      <View style={{flex: 1 }}>
           <Header headerText="Music Album App" />
           <List />
 
