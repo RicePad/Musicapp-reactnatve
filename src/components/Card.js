@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 class Card extends Component {
 	render(){
 		return(
-			<View>
+			<View style={styles.containerStyle}>
 
 			</View>
 			);
