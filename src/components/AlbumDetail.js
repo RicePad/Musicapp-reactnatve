@@ -27,7 +27,7 @@ class AlbumDetail extends Component {
                		/>
                </CardSection>
                <CardSection>
-               	<Button />
+               	<Button onClick={() => Linking.openURL(this.props.album.url)} text="Buy Now"/>
                </CardSection>
 			</Card>
 			);

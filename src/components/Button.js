@@ -6,8 +6,8 @@ import { Text, View, Image, Linking, TouchableOpacity } from 'react-native';
 class Button extends Component {
 	render(){
 		return(
-			<TouchableOpacity style={styles.buttonStyle}>
-				<Text style={styles.textStyle}>CLICK ME</Text>
+			<TouchableOpacity onPress={this.props.onClick} style={styles.buttonStyle}>
+				<Text style={styles.textStyle}>{this.props.text}</Text>
 			</TouchableOpacity>
 			)
 	}
