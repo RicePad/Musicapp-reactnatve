@@ -8,7 +8,7 @@ import List from './src/components/List';
   render() {
     return (
       <View>
-          <Header headerText="SayMosaic" />
+          <Header headerText="Music Album App" />
           <List />
 
       </View>
