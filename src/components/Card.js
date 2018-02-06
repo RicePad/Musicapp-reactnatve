@@ -5,7 +5,7 @@ class Card extends Component {
 	render(){
 		return(
 			<View style={styles.containerStyle}>
-
+				{this.props.children}
 			</View>
 			);
 	}
